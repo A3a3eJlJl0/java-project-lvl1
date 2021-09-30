@@ -8,6 +8,7 @@
 plugins {
     id 'application'
     id 'com.github.ben-manes.versions' version '0.38.0'
+    id 'checkstyle'
 }
 
 application {
@@ -19,4 +20,8 @@ version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+}
+
+run {
+    standardInput = System.in
 }
